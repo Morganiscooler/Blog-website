@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Urbanist';
+    src: url(Urbanist/Urbanist-VariableFont_wght.ttf);
+}
+
+.Container{
+    width: 5000px;
+    height: 500px;
+    background-color: rgb(9, 14, 41);
+    margin-left: -100px;
+    position: absolute;
+}
+.Links{
+    width: 200%;
+    height: 80px;
+    margin-left: -100px;
+    background-color: rgb(37, 41, 69);
+}
+.Links a{
+    animation: navLinkAnimation 0.5s ease;
+}
+.MediaLinks{
+    font-family: Urbanist;
+    display: inline-flex;
+    gap: 5em;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-left: -1250px;
+    transition: color 0.5s ease;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#Socials::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 35px;
+    margin-left: -3px;
+    width: 100px;
+    height: 2px;
+    z-index: 5;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  #Socials:hover::before {
+    transform: scaleX(1);
+  }
+  #Youtube::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 35px;
+    margin-left: -3px;
+    width: 115px;
+    height: 2px;
+    z-index: 5;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  #Youtube:hover::before {
+    transform: scaleX(1);
+  }
+  #Github::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 35px;
+    margin-left: -5px;
+    width: 100px;
+    height: 2px;
+    z-index: 5;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  #Github:hover::before {
+    transform: scaleX(1);
+  }
+  #DownloadBtn::before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 35px;
+    margin-left: -2px;
+    width: 140px;
+    height: 2px;
+    z-index: 5;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  #DownloadBtn:hover::before {
+    transform: scaleX(1);
+  }
+/* Do something with the downloaad button since it's the last child */
+.MediaLinks a:hover{
+    background-color: rgb(78, 85, 124);
+    transition: background-color 0.3s ease;
+    /* padding: 0.1em; */
+    
+}
+.lightbox:target{
+    display: block;
+}
+.lightbox{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 2000;
+}
+
+.closeBtn{
+    top: 3%;
+    right: 1%;
+    position: absolute;
+    z-index: 1;
+}
+.closeBtnimg{
+    width: 50px;
+    height: 50px;
+}
+
+#image-2{
+    margin-top: 25px;
+    height: 450px;
+    width: 500px;
+    margin-left: 500px;
+    opacity: 1;
+    animation: hoverAnimation  0.8s ease;
+}
+
+.enlarged{
+    border: solid #000 3px;
+    margin: 				auto;
+	max-height: 			85%;
+	max-width: 				85%;
+	position: 				absolute;
+	top: 					0;
+	left: 					0;
+	right: 					0;
+	bottom: 				0;
+}
+ 
+.leftarrow{
+    left: 75px;
+    top: 30%;
+    position: absolute;
+    width: 70px;
+    height: 180px;
+
+    background-color: rgb(39, 53, 98);
+}
+.rightarrow{
+    left: 1575px;
+    top: 30%;
+    position: absolute;
+    width: 70px;
+    height: 180px;
+    z-index: 3000;
+    background-color: rgb(39, 53, 98);
+}
+
+.rightbtn{
+    right: 0;
+}
+
+@keyframes hoverAnimation{
+    from{
+        transform: translateY(-5px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes navLinkAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(3px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
