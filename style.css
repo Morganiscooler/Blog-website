@@ -128,13 +128,63 @@ a{
     height: 50px;
 }
 
-#image-2{
-    margin-top: 25px;
-    height: 450px;
-    width: 500px;
-    margin-left: 500px;
-    opacity: 1;
+.imgContainer{
     animation: hoverAnimation  0.8s ease;
+    scroll-behavior: smooth !important;
+    padding: 2rem;
+    margin-left: 1000px;
+    
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.slider{
+    overflow-y: hidden;
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.slider a{
+    animation: sliderAnimation 25s ease-in-out alternate infinite;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #fff;
+    border: #000 1.5px solid;
+    border-radius: 50%;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
 }
 
 .enlarged{
@@ -171,10 +221,25 @@ a{
 .rightbtn{
     right: 0;
 }
+@keyframes sliderAnimation
+{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%)}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+    
+}
 
 @keyframes hoverAnimation{
     from{
-        transform: translateY(-5px);
+        transform: translateY(-10px);
         opacity: 0;
     }
     to{
