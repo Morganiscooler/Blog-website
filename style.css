@@ -2,16 +2,60 @@
     font-family: 'Urbanist';
     src: url(Urbanist/Urbanist-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-SemiBold.ttf);
+}
+
+@keyframes intro{
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+@keyframes zoomout{
+    from{
+        transform: scale(5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
 
 .Container{
     width: 5000px;
     height: 500px;
     background-color: rgb(9, 14, 41);
     margin-left: -100px;
+    left: 0;
+    position: absolute;
+    animation: intro 0.5s ease;
+}
+.Container2{
+    width: 5000px;
+    height: 500px;
+    background-color: rgb(9, 14, 41);
+    margin-top: 1000px;
+    margin-left: -100px;
+    left: 0;
+    position: absolute;
+}
+.Container3{
+    width: 5000px;
+    height: 500px;
+    background-color: rgb(9, 14, 41);
+    margin-top: 2000px;
+    margin-left: -100px;
+    left: 0;
     position: absolute;
 }
 .Links{
+    position: absolute;
+    z-index: 100;
     width: 200%;
+    top: 0;
     height: 80px;
     margin-left: -100px;
     background-color: rgb(37, 41, 69);
@@ -20,6 +64,7 @@
     animation: navLinkAnimation 0.5s ease;
 }
 .MediaLinks{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
     font-family: Urbanist;
     display: inline-flex;
     gap: 5em;
@@ -156,16 +201,45 @@ a{
     max-width: 48rem;
     margin: 0 auto;
 }
-
+/* Images in slider */
+/* #image-1:target ~ .imgContainer{
+    left: 0%;
+}
+#image-2:target ~ .imgContainer{
+    left: 100%;
+    
+}
+#image-3:target ~ .imgContainer{
+    left: 200%;
+} */
 /* im giving up on this --> work on making website scrollable with animations l8r */
 
-.parallax{
-    background-image: url(gallery/borgir.jpg);
-    height: 100%;
+.parallax img{
+    position: absolute;
+    /* background-image: url(gallery/borgir.jpg); */
+    width: 100%;
+    margin-top: 50vh;
+    left: 0;
+    z-index: -1;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    pointer-events: none;
+    animation: zoomout 1s ease;
+}
+
+#ParallaxText1{
+    font-size: 35px;
+    margin-left: 380px;
+    margin-top: 750px;
+    position: absolute;
+    font-family: Poppins;
+    font-weight: 1000;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 0;
+    animation: zoomout 0.75s ease;
 }
 
 html{
@@ -264,9 +338,9 @@ height: 100%;
     30%{transform: translateX(-200%);}
     40%{transform: translateX(-200%);}
     50%{transform: translateX(-200%)}
-    60%{transform: translateX(-202%);}
-    70%{transform: translateX(-202%);}
-    80%{transform: translateX(-202%);}
+    60%{transform: translateX(-200%);}
+    70%{transform: translateX(-200%);}
+    80%{transform: translateX(-200%);}
     90%{transform: translateX(0%);}
     100%{transform: translateX(0%);}
     
