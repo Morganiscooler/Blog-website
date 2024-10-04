@@ -15,3 +15,5 @@ window.addEventListener('scroll', () => {
 //         duration: 300, fill: "forwards", easing: "ease"
 //     })
 });
+
+// Make scroll animation when DOMcontent loads maybe??

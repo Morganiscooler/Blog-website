@@ -23,6 +23,14 @@
         transform: scale(1);
     }
 }
+@keyframes zoomout2{
+    from{
+        transform: scale(3);
+    }
+    to{
+        transform: scale(1);
+    }
+}
 
 .Container{
     width: 5000px;
@@ -178,6 +186,7 @@ a{
 }
 
 #Text{
+    letter-spacing: 2px;
     font-size: 20px;
     width: 500px;
     text-wrap: wrap;
@@ -186,7 +195,7 @@ a{
     color: #fff;
     font-family: Urbanist;
     word-spacing: 1.5px;
-    font-weight: 300;
+    font-weight: 350;
     font-size: 25px;
 }
 .imgContainer{
@@ -227,6 +236,22 @@ a{
     background-size: cover;
     pointer-events: none;
     animation: zoomout 1s ease;
+}
+
+.parallax img:last-child{
+    position: absolute;
+    /* background-image: url(gallery/borgir.jpg); */
+    width: 100%;
+    margin-top: 205vh;
+    left: 0;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+    animation: zoomout 1s ease;
+    z-index: -2;
 }
 
 #ParallaxText1{
