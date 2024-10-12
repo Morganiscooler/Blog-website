@@ -17,10 +17,12 @@
 }
 @keyframes zoomout{
     from{
-        transform: scale(5);
+        transform: scale(2);
+        opacity: 0.25;
     }
     to{
         transform: scale(1);
+        opacity: 1;
     }
 }
 @keyframes zoomout2{
@@ -50,6 +52,7 @@
     left: 0;
     position: absolute;
 }
+/* social medias */
 .Container3{
     width: 5000px;
     height: 500px;
@@ -59,6 +62,26 @@
     left: 0;
     position: absolute;
 }
+.SocialMedias{
+    text-align: left;
+    margin-left: 110vh;
+    display: grid;
+    margin-top: 100px;
+    /* move the instagram svg over */
+    row-gap: 5vh;
+    z-index: 50;
+    font-family: Urbanist;
+}
+#instagram, #youtube, #twitter{
+    font-size: 40px;
+    color: #fff;
+    
+}
+#instalogo, #ytlogo, #twitlogo{
+    width: 30px;
+    height: 30px;
+}
+/* social medias */
 .Links{
     position: absolute;
     z-index: 100;
@@ -226,7 +249,8 @@ a{
 .parallax img{
     position: absolute;
     /* background-image: url(gallery/borgir.jpg); */
-    width: 120%;
+    width: 110%;
+    max-height: 100%;
     margin-top: 50vh;
     left: 0;
     z-index: -1;
@@ -235,13 +259,14 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     pointer-events: none;
-    animation: zoomout 1s ease;
+    animation: zoomout 1500ms ease;
 }
 
 .parallax img:last-child{
     position: absolute;
     /* background-image: url(gallery/borgir.jpg); */
-    width: 120%;
+    width: 110%;
+    max-height: 100%;
     margin-top: 205vh;
     left: 0;
     z-index: -1;
@@ -250,13 +275,13 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     pointer-events: none;
-    animation: zoomout 1s ease;
+    /* animation: zoomout 3s ease; */
     z-index: -2;
 }
 
 #ParallaxText1{
-    font-size: 35px;
-    margin-left: 380px;
+    font-size: 40px;
+    margin-left: 355px;
     margin-top: 750px;
     position: absolute;
     font-family: Poppins;
@@ -264,7 +289,7 @@ a{
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     color: white;
     z-index: 0;
-    animation: zoomout 0.75s ease;
+    animation: zoomout 1600ms ease;
 }
 
 html{
