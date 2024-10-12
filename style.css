@@ -279,6 +279,46 @@ a{
     z-index: -2;
 }
 
+.inline-photo{
+
+    opacity: 0;
+    transform: scale(1.5);
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-out;
+
+    will-change: transform, opacity;
+}
+
+.inline-photo.is-visible{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.socials{
+    opacity: 0;
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1), 
+                opacity .5s .25s ease-out;
+    will-change: transform, opacity;
+    transform: translateY(20px);
+}
+
+.socials.is-visible{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* #testimg, #testimg2{
+    opacity: 0;
+} */
+
+#testimg.is-visible{
+    animation: zoomout 1500ms ease;
+}
+
+#testimg2.is-visible{
+    animation: zoomout 1500ms ease;
+}
+
 #ParallaxText1{
     font-size: 40px;
     margin-left: 355px;

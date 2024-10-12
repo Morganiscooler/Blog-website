@@ -1,8 +1,8 @@
 let text = document.getElementById("ParallaxText1");
 let image1 = document.getElementById("testimg");
 let image2 = document.getElementById("testimg2");
-let body = document.getElementsByTagName('body')[0];
 
+// Images will pop up when they are loaded in upon scroll
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
 
@@ -12,16 +12,16 @@ window.addEventListener('scroll', () => {
     function myFunction(){
         if(document.documentElement.scrollTop > 850){
             text.innerText = "Explore worlds like you've never before.";
-            image2.animate([{
-                transform: "scale(1.5)",
-                opacity: 0.25,
-            },
-            {
-                transform: "scale(1)",
-                opacity: 1,
-            }],{
-                duration: 1500, fill: "forwards", easing: "ease"
-            })
+            // image2.animate([{
+            //     transform: "scale(1.5)",
+            //     opacity: 0.25,
+            // },
+            // {
+            //     transform: "scale(1)",
+            //     opacity: 1,
+            // }],{
+            //     duration: 1500, fill: "forwards", easing: "ease"
+            // })
         }
         else{
             text.innerText = "Step into a vast new world of adventures.";
