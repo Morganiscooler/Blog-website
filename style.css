@@ -322,14 +322,25 @@ a{
 #ParallaxText1{
     font-size: 40px;
     margin-left: 355px;
-    margin-top: 750px;
+    margin-top: 730px;
     position: absolute;
     font-family: Poppins;
     font-weight: 1000;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     color: white;
     z-index: 0;
-    animation: zoomout 1600ms ease;
+    /* animation: zoomout 1600ms ease; */
+}
+#ParallaxText2{
+    font-size: 40px;
+    margin-left: 355px;
+    margin-top: 1710px;
+    position: absolute;
+    font-family: Poppins;
+    font-weight: 1000;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 0;
 }
 
 html{
