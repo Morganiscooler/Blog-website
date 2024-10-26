@@ -63,20 +63,29 @@
     position: absolute;
 }
 .SocialMedias{
+    position: absolute;
+    margin-top: 2120px;
     text-align: left;
-    margin-left: 110vh;
+    margin-left: 95vh;
     display: grid;
-    margin-top: 100px;
     /* move the instagram svg over */
     row-gap: 5vh;
     z-index: 50;
     font-family: Urbanist;
 }
+
 #instagram, #youtube, #twitter{
     font-size: 40px;
     color: #fff;
     
 }
+.Instagram, .Youtube, .Twitter{
+    transition: all 1s ease;
+}
+.Instagram:hover, .Youtube:hover, .Twitter:hover{
+    transform: scale(1.25);
+}
+
 #instalogo, #ytlogo, #twitlogo{
     width: 30px;
     height: 30px;
@@ -122,8 +131,19 @@ a{
     transition: transform 0.3s ease;
   }
   #Socials:hover::before {
-    transform: scaleX(1);
+    transform: scale(1);
   }
+  @keyframes growLarger{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(5);
+    }
+  }
+
+
+
   #Youtube::before {
     content: "";
     position: absolute;
@@ -205,9 +225,15 @@ a{
 }
 
 #slide2{
+    position: absolute;
     margin-left: 500px;
 }
-
+#slide3{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 1000px;
+    
+}
 #Text{
     letter-spacing: 2px;
     font-size: 20px;
