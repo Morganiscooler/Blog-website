@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="menu" class="menu" style="display: none;">
+        <div class="menulist">
+
+        </div>
+    </div>
     <center>
         <section class="parallax"> 
             <h2 id="ParallaxText1" class="inline-photo show-on-scroll">Step into a vast new world of adventures.</h2>
@@ -16,9 +21,9 @@
         </section>
         <div class="Links">
             <span class="MediaLinks">
-                <a class="moreBtn" onclick="">
+                <div class="moreBtn" onclick="OnMenuClick()">
                     <img id="menubtn" src="assets/menu_ico.png">
-                </a>
+                </div>
                 <a href="https://morganiscooler.netlify.app/othersocials" id="Socials">Socials</a>
                 <a href="https://youtube.com" id="Youtube">Youtube</a>
                 <a href="https://github.com" id="Gallery">Gallery</a>
@@ -86,8 +91,7 @@
                 </div>
             </slider>
             <!-- work on making arrows that lead to the next image/previous image -->
-        </div>
-        
+        </div>      
     </div>
 
     <div class="Container">
@@ -191,10 +195,12 @@
                 <img src="assets/twitter-icon.png" alt="youtube logo" id="twitlogo">
                 <a href="#" id="twitter" class="grow">Twitter</a>
             </div>
+            <p id="Copyright">Made with ♥ by Morganiscooler</p>
         </div>
     </center>
 </body>
     <script src="script.js"></script>
+    <script src="menu.js"></script>
     <!-- <script src="lazy.js"></script> -->
     <script src="scroll-on-show.js"></script>
 </html>
