@@ -271,8 +271,35 @@ a{
 /* .menu:target{
     display: block;
 } */
-#menu.is-visible{
+/* #menu.is-visible{
     transform: translateX(-10em);
+} */
+.showMenu{
+    animation: fadein 1.25s .2s ease;
+    animation-fill-mode: forwards;
+}
+.hideMenu{
+    animation: fadeout 1.25s .2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from{
+        transform: translateX(-35em);
+    }
+    to{
+        transform: translateX(-10em);
+    }
+    
+}
+@keyframes fadeout {
+    from{
+        transform: translateX(-10em);
+    }
+    to{
+        transform: translateX(-35em);
+    }
+    
 }
 
 .closeBtn{
