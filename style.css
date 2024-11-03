@@ -246,7 +246,6 @@ a{
 }
 #menu{
     /* display a table of links on this menu */
-    pointer-events: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -258,16 +257,34 @@ a{
     transition: transform 1.25s .2s ease;
     will-change: transform;
 }
-.menulist{
+#clickAnywhere{
+    position: absolute;
+    margin-left: 500px;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+}
+.menubox{
     background-color: rgb(0, 55, 107);
     top: 0;
     left: 0;
     width: 500px;
     height: 100%;
     box-shadow: 5px 5px 25px 5px #000;
-    z-index: 20000;
-
+    z-index: 3000;
 }
+.menulist{
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    color: #fff;
+    font-size: 30px;
+    display: grid;
+    columns: auto auto auto;
+    row-gap: 2.5vh;
+    z-index: 5000;
+}
+
 /* .menu:target{
     display: block;
 } */

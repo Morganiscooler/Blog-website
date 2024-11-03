@@ -1,7 +1,8 @@
 let menu = document.getElementById("menu");
+menu.classList.add("hideMenu");
 
 function OnMenuClick(){
-    if(menu.style.display == "none")
+    if(menu.classList.contains("hideMenu"))
     {
         menu.style.display = "block";
         // Ask why animation isn't working?
@@ -9,9 +10,9 @@ function OnMenuClick(){
         menu.classList.add("showMenu");
         // menu.style.transform = "translateX(-10em)";
     }
-    else{
-        menu.classList.remove("showMenu");
-        menu.classList.add("hideMenu");
-        menu.style.display = "none";
-    }
+    // else{
+    //     menu.classList.remove("showMenu");
+    //     menu.classList.add("hideMenu");
+        
+    // }
 }

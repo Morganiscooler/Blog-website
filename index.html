@@ -8,8 +8,13 @@
 </head>
 <body>
     <div id="menu" class="menu" style="display: none;">
-        <div class="menulist">
-
+        <div id="clickAnywhere" onclick="closeMenu()"></div>
+        <div class="menubox">
+            <div class="menulist">
+                <a href="#" id="firstDirect">target1</a>
+                <a href="#" id="secondDirect">target2</a>
+                <a href="#" id="thirdDirect">target3</a>
+            </div>
         </div>
     </div>
     <center>
@@ -21,7 +26,7 @@
         </section>
         <div class="Links">
             <span class="MediaLinks">
-                <div class="moreBtn" onclick="OnMenuClick()">
+                <div class="moreBtn" onclick="OnMenuClick();">
                     <img id="menubtn" src="assets/menu_ico.png">
                 </div>
                 <a href="https://morganiscooler.netlify.app/othersocials" id="Socials">Socials</a>
@@ -199,6 +204,7 @@
         </div>
     </center>
 </body>
+    <script src="closemenu.js"></script>
     <script src="script.js"></script>
     <script src="menu.js"></script>
     <!-- <script src="lazy.js"></script> -->
