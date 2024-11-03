@@ -245,6 +245,7 @@ a{
 	z-index: 2000;
 }
 #menu{
+    pointer-events: all;
     /* display a table of links on this menu */
 	position: fixed;
 	top: 0;
