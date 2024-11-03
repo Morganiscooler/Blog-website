@@ -73,30 +73,33 @@
          <p id="Text">
             10/26/2024 Latest update: Blender model added!
          </p>
-         
          <div id="slide2">
             <slider class="imgContainer">
                 <div class="slider-wrapper">
                     <div class="slider">
-                        <a href="#1" class="images">
-                            <img src="gallery/borgir.jpg" id="image-1">
-                        </a>
-                        <a href="#2" class="images">
-                            <img src="gallery/sigma.jpg" id="image-2">
-                        </a>
-                        <a href="#3" class="images">
-                            <img src="gallery/Robot_model_blender.gif" id="image-3">   
-                        </a>
+                        <div class="mySlides fade">
+                            <img src="gallery/Robot_model_blender.gif" style="width:100%">
+                          </div>
+                        
+                          <div class="mySlides fade">
+                            <img src="gallery/borgir.jpg" style="width:100%">
+                          </div>
+                        
+                          <div class="mySlides fade">
+                            <img src="gallery/british.jpg" style="width:100%">
+                          </div>
                     </div>
-                    <div class="slider-nav">
-                        <a href="#image-1"></a>
-                        <a href="#image-2"></a>
-                        <a href="#image-3"></a>
+                    <br>
+                    <div style="text-align:center">
+                        <!-- Fix not being able to click to other images on the same slide -->
+                        <span class="dot" onclick="Slidedisplayed(1)"></span>
+                        <span class="dot" onclick="Slidedisplayed(2)"></span>
+                        <span class="dot" onclick="Slidedisplayed(3)"></span>
                     </div>
                 </div>
             </slider>
             <!-- work on making arrows that lead to the next image/previous image -->
-        </div>      
+        </div>
     </div>
 
     <div class="Container">
@@ -205,6 +208,7 @@
     </center>
 </body>
     <script src="closemenu.js"></script>
+    <script src="script2.js"></script>
     <script src="script.js"></script>
     <script src="menu.js"></script>
     <!-- <script src="lazy.js"></script> -->

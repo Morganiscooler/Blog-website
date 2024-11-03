@@ -297,7 +297,7 @@ a{
     animation-fill-mode: forwards;
 }
 .hideMenu{
-    animation: fadeout 1.25s .2s ease-out;
+    animation: fadeout 2s ease;
     animation-fill-mode: forwards;
 }
 
@@ -619,8 +619,36 @@ height: 100%;
     display: none; /* Safari and Chrome */
 }
 
+.fadeOnCLick {
+    animation-name: fadeOnCLick;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fadeOnCLick {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.dot{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #797979;
+    opacity: 80%;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.mySlides {
+    top: 0;
+    aspect-ratio: 16/9;
+    /* display: none; */
+  }
+.dot:hover, .dot:hover {
+    background-color: #fff;
+  }
 .slider a{
-    animation: sliderAnimation 25s ease-in-out alternate infinite;
+    /* animation: sliderAnimation 25s ease-in-out alternate infinite; */
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;

@@ -9,11 +9,5 @@ function OnMenuClick(){
         // Ask why animation isn't working?
         menu.classList.remove("hideMenu");
         menu.classList.add("showMenu");
-        // menu.style.transform = "translateX(-10em)";
     }
-    // else{
-    //     menu.classList.remove("showMenu");
-    //     menu.classList.add("hideMenu");
-        
-    // }
 }
