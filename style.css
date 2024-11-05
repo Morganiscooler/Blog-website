@@ -282,8 +282,22 @@ a{
     font-size: 30px;
     display: grid;
     columns: auto auto auto;
-    row-gap: 2.5vh;
+    row-gap: 3vh;
     z-index: 5000;
+}
+.menulinks{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: #fff;
+    font-size: 30px;
+    display: grid;
+    columns: auto auto auto;
+    row-gap: 3vh;
+    z-index: 5000;
+}
+#firstDirect, #secondDirect, #thirdDirect{
+    list-style-type: circle;
 }
 
 /* .menu:target{
@@ -300,7 +314,15 @@ a{
     animation: fadeout 2s ease;
     animation-fill-mode: forwards;
 }
-
+.exitBtn{
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(assets/close_ico.png);
+    top: -50px;
+    left: -25px;
+}
 @keyframes fadein {
     from{
         transform: translateX(-35em);
