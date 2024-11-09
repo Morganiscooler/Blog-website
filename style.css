@@ -495,6 +495,15 @@ a{
     opacity: 1;
 }
 
+.fading{
+    animation-name: fading;
+    animation-duration: 0.35s;
+}
+@keyframes fading {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 .inline-photo{
 
     opacity: 0;
@@ -650,7 +659,7 @@ height: 100%;
     from {opacity: .4}
     to {opacity: 1}
   }
-.dot{
+.dot, .dot2, .dot3{
     cursor: pointer;
     height: 10px;
     width: 10px;
@@ -666,7 +675,7 @@ height: 100%;
     aspect-ratio: 16/9;
     /* display: none; */
   }
-.dot:hover, .dot:hover {
+.dot:hover, .dot2:hover, .dot3:hover, .active {
     background-color: #fff;
   }
 .slider a{
