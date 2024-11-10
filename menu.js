@@ -6,7 +6,7 @@ function OnMenuClick(){
     {
         menu.style.pointerEvents = "all";
         menu.style.display = "block";
-        // Ask why animation isn't working?
+        document.body.style.overflowY = "hidden";
         menu.classList.remove("hideMenu");
         menu.classList.add("showMenu");
     }

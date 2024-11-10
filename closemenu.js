@@ -7,6 +7,7 @@ function closeMenu(){
         menu.classList.remove("showMenu");
         menu.classList.add("hideMenu");
         menu.style.pointerEvents = "none";
+        document.body.style.overflowY = "";
     }
     
 }
