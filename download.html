@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery page - Artworks!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu" class="menu" style="display: none;">
+        <div id="clickAnywhere" onclick="closeMenu()"></div>
+        <div class="menubox">
+            <div class="menulist">
+                <div class="exitBtn" onclick="closeMenu()">
+                </div>
+                <div class="menulinks">
+                        <a href="index.html" id="firstDirect">Home</a>
+                        <a href="https://morganiscooler.netlify.app/othersocials" id="secondDirect">Other socials</a>
+                        <a href="forums.html" id="thirdDirect">Forum</a>
+                        <a href="gallery.html" id="fourthDirect">Gallery</a>
+                        <a href="#" id="fifthDirect">Youtube</a>
+                        <a href="#" id="sixthDirect">Instagram</a>
+                        <a href="#" id="seventhDirect">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <div class="Links">
+            <span class="MediaLinks">
+                <div class="moreBtn" onclick="OnMenuClick();">
+                    <img id="menubtn" src="assets/menu_ico.png">
+                </div>
+                <a href="index.html" id="Home">Home</a>
+                <a href="forums.html" id="Forum">Forum</a>
+                <a href="gallery.html" id="Gallery">Gallery</a>
+                <a href="download.html" id="DownloadBtn">Download</a>
+            </span>
+        </div>  
+    </center>
+    
+</body>
+    <script src="closemenu.js"></script>
+    <script src="menu.js"></script>
+</html>
