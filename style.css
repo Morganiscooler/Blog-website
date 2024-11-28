@@ -36,6 +36,128 @@
     }
 }
 
+@keyframes loadingOut {
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+#colordot, #colordot2, #colordot3{
+    border: #000 solid 5px;
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+#colordot{
+    background-color: rgb(255, 95, 111);
+    right: 0;
+}
+#colordot2{
+    background-color: rgb(255, 255, 93);
+    right: 50px;    
+}
+#colordot3{
+    background-color: rgb(65, 255, 106);
+    right: 100px;
+}
+.loading.hidden{
+    animation: loadingOut 1s forwards;
+}
+.loading{
+    position: fixed;
+    z-index: 1000000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#loadingtxt{
+    font-family: Urbanist;
+    font-size: 60px;
+    position: fixed;
+    margin-left: 76vh;
+    margin-top: -20vh;
+    width: 200px;
+    height: 200px;
+}
+#bar{
+    box-shadow: #000 0px 0px 15px;
+    position: fixed;
+    top: -10px;
+    background-color: #89cee4;
+    width: 100%;
+    height: 60px;
+}
+#obj {
+    position: fixed;
+    margin-left: 80vh;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#obj > div {
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+#obj > div:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: 	rgb(0, 163, 238);
+    animation: anm-sq-7-move 2s infinite linear both;
+    transform-origin: 100% 100%;
+}
+#obj > div::nth-child(2) {
+    transform: rotateZ(90deg);
+}
+#obj > div::nth-child(4) {
+    transform: rotateZ(180deg);
+}
+#obj > div::nth-child(3) {
+    transform: rotateZ(270deg);
+}
+#obj > div:nth-child(2)::before {
+    animation-delay: 0.3s;
+}
+#obj > div:nth-child(4)::before {
+    animation-delay: 0.6s;
+}
+#obj > div:nth-child(3)::before {
+    animation-delay: 0.9s;
+}
+@keyframes anm-sq-7-move {
+    0%, 10% {
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
 
 #Copyright{
    font-size: 25px;
@@ -87,24 +209,50 @@
 /* social medias */
 .Container3{
     width: 5000px;
-    height: 500px;
+    height: 600px;
     background-color: rgb(9, 14, 41);
-    margin-top: 2000px;
+    margin-top: 2080px;
     margin-left: -100px;
     left: 0;
     position: absolute;
 }
 .SocialMedias{
     position: absolute;
-    margin-top: 2120px;
+    margin-top: 2140px;
     text-align: center;
-    margin-left: 85vh;
+    margin-left: 80vh;
     display: grid;
     /* move the instagram svg over */
     row-gap: 5vh;
     z-index: 50;
     font-family: Urbanist;
 }
+
+input[type=text], input[type=submit] {
+    font-family: Urbanist;
+    font-weight: 800;
+    font-size: 20px;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    opacity: 1;
+    background-color: #1986a7;
+    color: white;
+    border: none;
+    transition: opacity 0.5s ease-out;
+    will-change: opacity;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.65;
+    cursor: pointer;
+  }
 
 #instagram, #youtube, #twitter{
     font-size: 40px;
@@ -165,6 +313,37 @@ a{
   #Home:hover::before {
     transform: scale(0.85);
   }
+  #Admin{
+    z-index: 10000;
+    font-weight: 700;
+    font-family: Urbanist;
+    padding: 4px;
+    width: 175px;
+    text-shadow: none;
+    background-color: rgb(255, 255, 255);
+    border: #000 5px solid;
+  }
+  .Admin{
+    margin-top: -10px;
+    margin-left: -100px;
+  }
+  #Admincontinue{
+    color: white;
+    margin-top: -50px;
+    margin-left: 228px;
+    width: 50px;
+    height: 32px;
+    border: #000 solid 5px;
+    background-color: rgb(25, 140, 255);
+    opacity: 1;
+    will-change: opacity;
+    transition: opacity 0.25s ease-out;
+  }
+  #Admincontinue:hover{
+    cursor: pointer;
+    opacity: 0.85;
+  }
+
   @keyframes growLarger{
     from{
         transform: scale(1);
@@ -437,22 +616,9 @@ a{
     max-width: 48rem;
     margin: 0 auto;
 }
-/* Images in slider */
-/* #image-1:target ~ .imgContainer{
-    left: 0%;
-}
-#image-2:target ~ .imgContainer{
-    left: 100%;
-    
-}
-#image-3:target ~ .imgContainer{
-    left: 200%;
-} */
-/* im giving up on this --> work on making website scrollable with animations l8r */
 
 .parallax img{
     position: absolute;
-    /* background-image: url(gallery/borgir.jpg); */
     width: 110%;
     max-height: 100%;
     margin-top: 50vh;
@@ -468,7 +634,6 @@ a{
 
 .parallax img:last-child{
     position: absolute;
-    /* background-image: url(gallery/borgir.jpg); */
     width: 110%;
     max-height: 100%;
     margin-top: 205vh;
@@ -479,7 +644,6 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     pointer-events: none;
-    /* animation: zoomout 3s ease; */
     z-index: -2;
 }
 
@@ -640,6 +804,7 @@ html{
 
 body{
     overflow-x: hidden;
+    background-color: rgb(25, 42, 61);
 }
 
 html, body{
@@ -716,6 +881,42 @@ height: 100%;
     opacity: 0.75;
 }
 
+/* --------------------- gallery -------------------- */
+.gallery{
+    position: absolute; 
+    margin-left: 5vh;
+    width: 200vh;
+    height: 2080px; 
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+    background-color: rgb(74, 97, 137);
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    z-index: 0;
+
+}
+
+.gallery > img 
+{
+    border: rgb(0, 0, 0) 5px solid;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery{
+        --num-cols: 2;
+        --row-height: 200px;
+    }   
+}
+
 .enlarged{
     border: solid #000 3px;
     margin: 				auto;
@@ -786,3 +987,19 @@ height: 100%;
         transform: translateY(0px);
     }
 }
+legend {
+    -webkit-text-stroke: #fff 1.2px;
+    float: left;
+    position: absolute;
+    bottom: 4px; /* manually repositioned to better align the text along the border */
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 0 5px;
+    font-family: Urbanist;
+    font-size: 32px;
+    color: transparent;
+    font-weight: 800;
+    background: rgb(0, 0, 0); /* acts like the color property */
+   -webkit-background-clip: text;
+    background-clip: text;
+  }

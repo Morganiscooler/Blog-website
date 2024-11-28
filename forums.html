@@ -41,7 +41,7 @@
     </center>
     <div class="Container3" style="margin-top: 10px;"></div>
     <center>
-        <div class="SocialMedias socials show-on-scroll" style="margin-top: 120px;">
+        <div class="SocialMedias socials show-on-scroll" style="margin-top: 80px;">
             <div class="Instagram">
                 <img src="assets/instagram-white-icon.png" alt="instagram logo" id="instalogo">
                 <a href="#" id="instagram" class="grow">Instagram</a>
@@ -54,10 +54,34 @@
                 <img src="assets/twitter-icon.png" alt="youtube logo" id="twitlogo">
                 <a href="#" id="twitter" class="grow">Twitter</a>
             </div>
+            <form method="POST" id="form"> 
+                <div class="Email">
+                  <input type="text" placeholder="Email address" name="Email" required>
+                </div>         
+                <form class="container">
+                  <input type="submit" value="Subscribe for Updates!" id="submit-button">
+                </form>
+            </form>
+            <div
+            id="message"
+            style="
+              position: absolute;
+              display: none;
+              bottom: 80px;
+              left: 15%;
+              font-weight: bold;
+              color: green;
+              padding: 8px;
+              background-color: beige;
+              border-radius: 4px;
+              border-color: aquamarine;
+            "
+          ></div>
             <p id="Copyright">Made with ♥ by Morganiscooler</p>
         </div>
     </center>
 </body>
+    <script src="Subscription.js"></script>
     <script src="closemenu.js"></script>
     <script src="menu.js"></script>
     <script src="scroll-on-show.js"></script>
