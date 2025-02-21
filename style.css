@@ -409,7 +409,7 @@ a{
     display: block;
     margin-top: 35px;
     margin-left: -2px;
-    width: 140px;
+    width: 100px;
     height: 2px;
     z-index: 5;
     background-color: #ffffff;
@@ -835,9 +835,25 @@ html{
 }
 
 body{
+    margin: 0;
     overflow-x: hidden;
     background-color: rgb(25, 42, 61);
 }
+
+.Games{
+    width: 260px;
+	height: 260px;
+	border: solid 2px #000;
+    transition: opacity 0.6s ease;
+
+}
+
+
+.Games:hover{
+    opacity: .5;
+    
+}
+
 
 html, body{
 height: 100%;
@@ -947,6 +963,24 @@ height: 100%;
         --num-cols: 2;
         --row-height: 200px;
     }   
+}
+
+legend{
+    /* adjust where the credit text goes */
+}
+
+@keyframes lightbox_up {
+    from{
+        transform: translateY(15px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+    
+}
+
+.enlarged{
+    animation: lightbox_up forwards 0.65s ease-out;
 }
 
 .enlarged{

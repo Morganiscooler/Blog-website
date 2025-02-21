@@ -58,7 +58,7 @@
                 <a href="forums.html" id="Forum">Forum</a>
                 <a href="gallery.html" id="Gallery">Gallery</a>
                 <a href="about.html" id="About">About</a>
-                <a href="download.html" id="DownloadBtn">Download</a>
+                <a href="games.html" id="DownloadBtn">Games</a>
                 <div class="Admin">
                     <input type="text" id="Admin" placeholder="Password">
                     <div id="Admincontinue">&rarr;</div>
@@ -137,7 +137,7 @@
         <a class="nextBtn" onclick="plusSlides(1)">&#10095</a>
         <a class="prevBtn" onclick="plusSlides(-1)">&#10094</a>
          <p id="Text">
-            test 3
+            TBD
          </p>
          <div id="slide2">
             <slider class="imgContainer">
@@ -173,7 +173,7 @@
         <a class="nextBtn" onclick="plusSlides(0)">&#10095</a>
         <a class="prevBtn" onclick="plusSlides(-1)">&#10094</a>
          <p id="Text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, consequatur reprehenderit. Ducimus in est dolorem minus quisquam dicta nulla, facilis dignissimos et earum, debitis optio praesentium voluptas blanditiis vel! Incidunt?
+            TBD 2
          </p>
          <div id="slide2">
             <slider class="imgContainer">
@@ -208,23 +208,56 @@
         <p id="Text2" class="socials show-on-scroll">
             Featured artworks
         </p>
+        <!-- ************************************************************************ -->
+        <div class="lightbox" id="artwork-one">
+            <a href="#" class="closeBtn">
+                <img src="gallery/Exit.png" class="closeBtnimg">
+            </a>
+            <div class="middle">
+                <center>
+                    <img src="gallery/british.jpg" class="lazy enlarged">
+                </center>
+            </div>
+        </div> 
+        <div class="lightbox" id="artwork-two">
+            <a href="#" class="closeBtn">
+                <img src="gallery/Exit.png" class="closeBtnimg">
+            </a>
+            <div class="middle">
+                <center>
+                    <img src="gallery/red_reef_by_tereruart_ddwsuqo.png" class="lazy enlarged">
+                </center>
+            </div>
+        </div> 
+        <div class="lightbox" id="artwork-three">
+            <a href="#" class="closeBtn">
+                <img src="gallery/Exit.png" class="closeBtnimg">
+            </a>
+            <div class="middle">
+                <center>
+                    <img src="gallery/borgir.jpg" class="lazy enlarged">
+                </center>
+            </div>
+        </div> 
+        <!-- ************************************************************************ -->
+
         <div id="featured1" class="photo-animation show-on-scroll">
             <legend>Artwork by ...</legend>
-            <a href="#1">
-            <img src="gallery/british.jpg" id="featured-1">
+            <a href="#artwork-one">
+                <img src="gallery/british.jpg" id="featured-1">
             </a>
             <!-- work on making arrows that lead to the next image/previous image -->
         </div>
         <div id="featured2" class="photo-animation2 show-on-scroll">
             <legend>Artwork by ...</legend>
-            <a href="#2">
-            <img src="gallery/red_reef_by_tereruart_ddwsuqo.png" id="featured-2">
+            <a href="#artwork-two">
+                <img src="gallery/red_reef_by_tereruart_ddwsuqo.png" id="featured-2">
             </a>
         </div>
         <div id="featured3" class="photo-animation3 show-on-scroll">
             <legend>Artwork by ...</legend>
-            <a href="#3">
-            <img src="gallery/borgir.jpg" id="featured-3">
+            <a href="#artwork-three">
+                <img src="gallery/borgir.jpg" id="featured-3">
             </a>
         </div>
     </div>
