@@ -932,13 +932,14 @@ height: 100%;
 /* --------------------- gallery -------------------- */
 .gallery{
     position: absolute; 
+    top: 20%;
     margin-left: 5vh;
     width: 200vh;
     height: 2080px; 
     --gap: 16px;
     --num-cols: 4;
     --row-height: 300px;
-    background-color: rgb(74, 97, 137);
+    background-color: rgb(122, 176, 193);
     box-sizing: border-box;
     padding: var(--gap);
 
@@ -949,6 +950,110 @@ height: 100%;
     z-index: 0;
 
 }
+
+.developer{
+    font-size: larger;
+    font-weight: 600;
+    font-family: Urbanist;
+    letter-spacing: 2px;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    padding-left: 9%;
+}
+
+.Search{
+    width: auto;
+    height: 200px;
+    background-color: #1986a7;
+}
+
+
+#searchForm {
+    position: relative;
+    top: 70%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 4px solid white;
+    padding: 5px;
+  }
+  
+  input[type=search] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+  }
+  
+  .fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 4px;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+  }
+  #searchForm:focus-within,
+  #searchForm:hover,
+  #searchForm:valid{
+    width: 350px;
+    cursor: pointer;
+  }
+  
+  #searchForm:hover input,
+  #searchForm:focus-within input,
+  #searchForm:valid input {
+    width: 100%;
+  } 
+  
+  #searchForm:hover .fa,
+  #searchForm:focus-within .fa,
+  #searchForm:valid .fa {
+    background: #07051a;
+    color: white;       
+  }
+  
+  #clearBtn {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    font-size: 20px;
+    color: white;
+    padding: 4px;
+    min-height: max-content;
+    background: transparent;
+    outline: 0;
+    border: 1px solid #303030;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  form:valid #clearBtn {
+    display: block;
+  }
+  
 
 .gallery > img 
 {

@@ -27,6 +27,7 @@
         </div>
     </div>
     <center>
+
         <div class="Links">
             <span class="MediaLinks">
                 <div class="moreBtn" onclick="OnMenuClick();">
@@ -37,20 +38,28 @@
                 <a href="gallery.html" id="Gallery">Gallery</a>
                 <a href="about.html" id="About">About</a>
                 <a href="games.html" id="DownloadBtn">Games</a>
-                <div class="Admin">
-                    <input type="text" id="Admin" placeholder="Password">
-                    <div id="Admincontinue">&rarr;</div>
-                </div>
             </span>
         </div>  
+        
 
+    <div class="Search">
+        <form id="searchForm" action="">
+            <input id="searchBar" type="search" placeholder="Search for the Developer here!" autofocus required>
+            <i class="fa fa-search"></i>
+            <button id="clearBtn" onclick="clearInput()">Clear</a>
+          </form>
+    </div>
         <div class="gallery" style="height: 150vh; margin-top: 10vh;">
-            <a class="imglink" href="Game1.html">
-                <img class="Games" src="gallery/automaton_thumb.png" title="Click to play!">
+            <a class="Game1" href="Game1.html">
+                <img class="Games" id="game1" src="gallery/automaton_thumb.png" title="Click to play!">
+                <p class="developer" href="#">Bloxy996</p>
             </a>
-        </div>
-            <!------------------------------------------------------>
-        </div>    
+            <a class="Game2" href="Game2.html">
+                <img class="Games" id="game2" src="gallery/Platformer.png" title="Click to play!">
+                <p class="developer">0ddSh33p</p>
+            </a>
+        </div> 
+            <!------------------------------------------------------>  
     </center>
     <div class="Container3" style="margin-top: 90vh;"></div>
     <center>
@@ -98,4 +107,6 @@
     <script src="closemenu.js"></script>
     <script src="menu.js"></script>
     <script src="scroll-on-show.js"></script>
+    <script src="search.js"></script>
+    <script src="search2.js"></script>
 </html>
