@@ -935,7 +935,6 @@ height: 100%;
     top: 20%;
     margin-left: 4%;
     width: 200vh;
-    height: 2080px; 
     --gap: 16px;
     --num-cols: 4;
     --row-height: 300px;
@@ -952,6 +951,7 @@ height: 100%;
 }
 
 .developer{
+    top: 26%;
     font-size: larger;
     font-weight: 600;
     font-family: Urbanist;
@@ -975,7 +975,7 @@ height: 100%;
     left: 10%;
     transform: translate(-50%, -50%);
     transition: all 1s;
-    width: 50px;
+    width: 350px;
     height: 50px;
     background: white;
     box-sizing: border-box;
@@ -985,10 +985,12 @@ height: 100%;
   }
   
   input[type=search] {
+    font-family: Urbanist;
+    font-weight: 600;
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
+    width: 100%;
     height: 42.5px;
     line-height: 30px;
     outline: 0;
@@ -1015,7 +1017,7 @@ height: 100%;
   #searchForm:focus-within,
   #searchForm:hover,
   #searchForm:valid{
-    width: 350px;
+    width: 400px;
     cursor: pointer;
   }
   
