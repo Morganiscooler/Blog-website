@@ -946,12 +946,12 @@ height: 100%;
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
+    row-gap: 3.5em;
     z-index: 0;
 
 }
 
 .developer{
-    top: 26%;
     font-size: larger;
     font-weight: 600;
     font-family: Urbanist;
@@ -960,6 +960,19 @@ height: 100%;
     position: absolute;
     display: flex;
     padding-left: 9%;
+    margin-top: 2.5%;
+}
+
+.gameName{
+    font-size: larger;
+    font-weight: 600;
+    font-family: Urbanist;
+    letter-spacing: 2px;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    padding-left: 8%;
+    margin-top: 0.5%;
 }
 
 .Search{
