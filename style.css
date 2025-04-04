@@ -950,6 +950,48 @@ height: 100%;
     z-index: 0;
 
 }
+/* ----------------------------About----------------------------- */
+.aboutMe{
+    transition: all ease 1.5s;
+    opacity: 0;
+    height: 400px;
+    width: 1200px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 5px solid #000;
+}
+
+.aboutMe.is-visible2{
+    opacity: 1;
+    transform: translateY(-15px);
+}
+
+.aboutGrid{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all ease 1.5s;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    gap: var(--gap);
+    row-gap: 9.85em;
+    
+}
+
+#aboutMe1{
+    box-shadow: 12px 12px 0px 5px rgba(255, 46, 98, 0.5);
+}
+#aboutMe2{
+    box-shadow: 12px 12px 0px 5px rgba(28, 93, 191, 0.5);
+}
+#aboutMe3{
+    box-shadow: 12px 12px 0px 5px rgba(134, 28, 191, 0.5);
+}
+
+/* -----------------------------Games------------------------------ */
 
 .developer{
     font-size: larger;

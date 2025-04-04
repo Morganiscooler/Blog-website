@@ -2,10 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1500, user-scalable=0">
     <title>About Us!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body style="background-color:#f2f2f2">
+    <div id="menu" class="menu" style="display: none;">
+        <div id="clickAnywhere" onclick="closeMenu()"></div>
+        <div class="menubox">
+            <div class="menulist">
+                <div class="exitBtn" onclick="closeMenu()">
+                </div>
+                <div class="menulinks">
+                    <a href="index.html" id="firstDirect">Home</a>
+                    <a href="https://morganiscooler.netlify.app/othersocials" id="secondDirect">Other socials</a>
+                    <a href="forums.html" id="thirdDirect">Forum</a>
+                    <a href="gallery.html" id="fourthDirect">Gallery</a>
+                    <a href="#" id="fifthDirect">Youtube</a>
+                    <a href="#" id="sixthDirect">Instagram</a>
+                    <a href="#" id="seventhDirect">Twitter</a>
+                    <a href="about.html" id="eighthDirect">About</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <center>
+
+        <div class="Links">
+            <span class="MediaLinks">
+                <div class="moreBtn" onclick="OnMenuClick();">
+                    <img id="menubtn" src="assets/menu_ico.png">
+                </div>
+                <a href="index.html" id="Home">Home</a>
+                <a href="forums.html" id="Forum">Forum</a>
+                <a href="gallery.html" id="Gallery">Gallery</a>
+                <a href="about.html" id="About">About</a>
+                <a href="games.html" id="DownloadBtn">Games</a>
+            </span>
+        </div>  
+        <div class="aboutGrid">
+            <div class="aboutMe show-on-scroll2" id="aboutMe1">
+                <h1>About Me:</h1>
+                <p>I'm a young student who enjoys making art, games, and websites, you know the rest.</p>
+            </div>
+            <div class="aboutMe show-on-scroll2" id="aboutMe2">
+                <h1>What got me into making this website?</h1>
+                <p>I'm a young student who enjoys making art, games, and websites, you know the rest.</p>
+            </div>
+            <div class="aboutMe show-on-scroll2" id="aboutMe3">
+                <h1>Why should you subscribe to my blog?</h1>
+                <p>I'm a young student who enjoys making art, games, and websites, you know the rest.</p>
+            </div>
+        </div>
+    </center>
+
+    <div class="Container3" style="margin-top: 115%;"></div>
+    <center>
+        <div class="SocialMedias socials show-on-scroll" style="margin-top: 120%;">
+            <div class="Instagram">
+                <img src="assets/instagram-white-icon.png" alt="instagram logo" id="instalogo">
+                <a href="#" id="instagram" class="grow">Instagram</a>
+            </div>
+            <div class="Youtube">
+                <img src="assets/youtube-icon.png" alt="youtube logo" id="ytlogo">
+                <a href="#" id="youtube" class="grow">Youtube</a>
+            </div>
+            <div class="Twitter">
+                <img src="assets/twitter-icon.png" alt="youtube logo" id="twitlogo">
+                <a href="#" id="twitter" class="grow">Twitter</a>
+            </div>
+            <form method="POST" id="form"> 
+                <div class="Email">
+                  <input type="text" placeholder="Email address" name="Email" required>
+                </div>         
+                <form class="container">
+                  <input type="submit" value="Subscribe for Updates!" id="submit-button">
+                </form>
+            </form>
+            <div
+            id="message"
+            style="
+              position: absolute;
+              display: none;
+              bottom: 80px;
+              left: 15%;
+              font-weight: bold;
+              color: green;
+              padding: 8px;
+              background-color: beige;
+              border-radius: 4px;
+              border-color: aquamarine;
+            "
+          ></div>
+            <p id="Copyright">Made with ♥ by Morganiscooler</p>
+        </div>
+    </center>
+
+    <script src="enlargen.js"></script>
+    <script src="menu.js"></script>
+    <script src="closemenu.js"></script>
+    <script src="scroll-on-show.js"></script>
+    <script src="scrollShow.js"></script>
+    <script src="Subscription.js"></script>
 </body>
 </html>
