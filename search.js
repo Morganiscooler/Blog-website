@@ -13,6 +13,7 @@ searchBar.addEventListener('input', function(event){
     gameDevMap.set(".Game3", "bloxy996");
     gameDevMap.set(".Game4", "bloxy996");
     gameDevMap.set(".Game5", "0ddsh33p");
+    gameDevMap.set(".Game6", "yippee");
 
     function countLetters(searchItem, gameList) {
         console.log("The string is " + searchItem);

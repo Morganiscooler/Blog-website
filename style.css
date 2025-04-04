@@ -993,6 +993,20 @@ height: 100%;
 
 /* -----------------------------Games------------------------------ */
 
+.nextPageBtn{
+    width: 200px;
+    height: 50px;
+   position: absolute;
+   bottom: 20%;
+   left: 50%;
+}
+.prevPageBtn{
+    width: 200px;
+    height: 50px;
+   position: absolute;
+   bottom: 20%;
+   left: 35%;
+}
 .developer{
     font-size: larger;
     font-weight: 600;

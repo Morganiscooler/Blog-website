@@ -49,7 +49,7 @@
           </form>
     </div>
     <!-- Note to self: Make the titles a visible title on the UI, not just a hover -->
-        <div class="gallery" style="height: 150vh; margin-top: 10vh;">
+        <div class="gallery Container" style="height: 150vh; margin-top: 10vh;">
             <a class="Game1" href="Game1.html">
                 <img class="Games" src="gallery/automaton_thumb.png" title="Automaton">
                 <p class="gameName" href="#" style="margin-left: -0.2%;">"Automaton"</p>
@@ -75,8 +75,36 @@
                 <p class="gameName" href="#" style="margin-left: 0.1%;">"John Stock"</p>
                 <p class="developer" href="#">0ddSh33p</p> 
             </a>
+            <a class="Game5" href="Game5.html">
+                <img class="Games" src="gallery/Johnstock_thumbnail.png" title="John Stock (stealth)">
+                <p class="gameName" href="#" style="margin-left: 0.1%;">"John Stock"</p>
+                <p class="developer" href="#">0ddSh33p</p> 
+            </a>
+            <a class="Game5" href="Game5.html">
+                <img class="Games" src="gallery/Johnstock_thumbnail.png" title="John Stock (stealth)">
+                <p class="gameName" href="#" style="margin-left: 0.1%;">"John Stock"</p>
+                <p class="developer" href="#">0ddSh33p</p> 
+            </a>
+            <a class="Game5" href="Game5.html">
+                <img class="Games" src="gallery/Johnstock_thumbnail.png" title="John Stock (stealth)">
+                <p class="gameName" href="#" style="margin-left: 0.1%;">"John Stock"</p>
+                <p class="developer" href="#">0ddSh33p</p> 
+            </a>
+            <!-- Next page b/c max games per page is 8 -->
+            <button class="nextPageBtn" onclick="plusPages(1)" >Next</button>
+            <button class="prevPageBtn" onclick="plusPages(-1)" >Previous</button>
         </div> 
             <!------------------------------------------------------>  
+            <div class="gallery Container" style="height: 150vh; margin-top: 10vh; z-index: -10;">
+                <a class="Game6" href="Game5.html">
+                    <img class="Games" src="gallery/Johnstock_thumbnail.png" title="John Stock (stealth)">
+                    <p class="gameName" href="#" style="margin-left: 0.1%;">"John Stock"</p>
+                    <p class="developer" href="#">0ddSh33p</p> 
+                </a>
+                <!-- Next page b/c max games per page is 8 -->
+                <button class="nextPageBtn" onclick="plusPages(1)" >Next</button>
+                <button class="prevPageBtn" onclick="plusPages(-1)" >Previous</button>
+            </div> 
     </center>
     <div class="Container3" style="margin-top: 60%;"></div>
     <center>
@@ -125,4 +153,5 @@
     <script src="menu.js"></script>
     <script src="scroll-on-show.js"></script>
     <script src="search.js"></script>
+    <script src="nextPage.js"></script>
 </html>
